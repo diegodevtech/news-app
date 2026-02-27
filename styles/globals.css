@@ -14,16 +14,16 @@
 
   /* Typography */
   --font-family: 'Archivo', sans-serif;
-  --h1: 800 1.5rem/135% var(--font-family);
-  --h2: 800 1rem/140% var(--font-family);
-  --h3: 800 0.875rem/140% var(--font-family);
-  --text-span: 600 0.875rem/145% var(--font-family);
-  --text-base: 400 1rem/140% var(--font-family);
-  --text-sm: 400 0.875rem/160% var(--font-family);
+  --h1: 800 1.5rem / 135% var(--font-family);
+  --h2: 800 1rem / 140% var(--font-family);
+  --h3: 800 0.875rem / 140% var(--font-family);
+  --text-span: 600 0.875rem / 145% var(--font-family);
+  --text-base: 400 1rem / 140% var(--font-family);
+  --text-sm: 400 0.875rem / 160% var(--font-family);
 }
 
 body {
-  font: var(--text);
+  font: var(--text-base);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
 }
@@ -39,4 +39,19 @@ a:hover {
 
 h1,h2,h3 {
   font: inherit;
+}
+
+.container {
+  max-width: 80rem;
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+/* Utility First */
+.grid {
+  display: grid;
+}
+
+.grid-column {
+  grid-auto-flow: column;
 }
