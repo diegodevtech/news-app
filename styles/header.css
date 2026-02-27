@@ -1,13 +1,12 @@
 #primary {
   padding-block: 1.25rem;
-
   justify-content: space-between;
-  /* Nesting CSS */
-   div {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem
-   }
+}
+
+#primary div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #secondary {
@@ -15,4 +14,23 @@
   border: 1px solid var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #primary {
+    row-gap: 1rem;
+    justify-items: flex-start;
+  }
+
+  #secondary {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-block: 0.75rem;
+    scrollbar-width: thin;
+  }
+
+  #secondary a {
+    white-space: nowrap;
+  }
 }

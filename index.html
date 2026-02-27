@@ -13,12 +13,13 @@
 </head>
 <body>
   <header class="container">
-    <nav id="primary" class="grid grid-col">
+    <nav id="primary" class="grid grid-col" aria-label="Menu principal">
       <div>
         <img src="assets/icons/List.svg" alt="Ícone de Menu">
         <strong>Menu</strong>
       </div>
       <div>
+        <h1 class="sr-only">Tech News</h1>
         <img src="assets/logo.svg" alt="Tech News Logo">
       </div>
       <div>
@@ -26,7 +27,7 @@
         <img src="assets/icons/MagnifyingGlass.svg" alt="Ícone de lupa para pesquisa">
       </div>
     </nav>
-    <nav id="secondary" class="grid grid-col">
+    <nav id="secondary" class="grid grid-col" aria-label="Navegação por temas">
       <a href="#">Inteligência Artificial</a>
       <a href="#">Blockchain</a>
       <a href="#">Hologramas</a>
@@ -39,7 +40,7 @@
   <main class="grid container">
     <section id="featured" class="grid grid-col gap-1">
       <figure class="card">
-        <img src="assets/images/Image 01.png" alt="Image">
+        <img src="assets/images/Image 01.png" alt="Robô doméstico realizando tarefas em casa.">
         <figcaption>
           <span class="content-tag">Robótica</span>
           <h2 class="text-2xl">Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências.</h2>
@@ -47,28 +48,28 @@
       </figure>
       <div class="grid grid-cols-2 gap-1">
         <figure class="card">
-          <img src="assets/images/Image 02.png" alt="Image">
+          <img src="assets/images/Image 02.png" alt="Smartphone projetando holograma 3D." loading="lazy">
           <figcaption>
             <span class="content-tag">Hologramas</span>
             <h2 class="text-lg">Novo Smartphone Projetor 3D chega ao mercado, transformando a forma como vemos nossas telas!</h2>
           </figcaption>
         </figure>
         <figure class="card">
-          <img src="assets/images/Image 03.png" alt="Image">
+          <img src="assets/images/Image 03.png" alt="Cidade conectada com tecnologia 6G." loading="lazy">
           <figcaption>
             <span class="content-tag">Internet</span>
             <h2 class="text-lg">Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos comunicamos.</h2>
           </figcaption>
         </figure>
         <figure class="card">
-          <img src="assets/images/Image 04.png" alt="Image">
+          <img src="assets/images/Image 04.png" alt="Relógio inteligente em pulso humano." loading="lazy">
           <figcaption>
             <span class="content-tag">Vestíveis</span>
             <h2 class="text-lg">Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o bem-estar pessoal.</h2>
           </figcaption>
         </figure>
         <figure class="card">
-          <img src="assets/images/Image 05.png" alt="Image">
+          <img src="assets/images/Image 05.png" alt="Estudante usando óculos de realidade virtual." loading="lazy">
           <figcaption>
             <span class="content-tag">Realidade Virtual</span>
             <h2 class="text-lg">Escolas adotam a tecnologia VR para proporcionar experiências imersivas, transformando a aprendizagem tradicional.</h2>
@@ -87,22 +88,22 @@
       <div class="grid gap-1">
         <figure>
           <span class="content-tag">Veículos</span>
-          <img src="assets/images/Image 06.png" alt="Protótipo de veículo voador é apresentado, marcando o início da era dos transportes aéreos pessoais.">
+          <img src="assets/images/Image 06.png" alt="Protótipo de veículo voador em teste." loading="lazy">
           <p>Protótipo de veículo voador é apresentado, marcando o início da era dos transportes aéreos pessoais.</p>
         </figure>
         <figure>
           <span class="content-tag">Holograma</span>
-          <img src="assets/images/Image 07.png" alt="PPlataforma de videoconferência apresenta nova função de hologramas, tornando as chamadas virtuais mais realistas e envolventes.">
+          <img src="assets/images/Image 07.png" alt="Chamada de vídeo com holograma projetado." loading="lazy">
           <p>Plataforma de videoconferência apresenta nova função de hologramas, tornando as chamadas virtuais mais realistas e envolventes.</p>
         </figure>
         <figure>
           <span class="content-tag">Realidade Virtual</span>
-          <img src="assets/images/Image 08.png" alt="Nova geração de consoles de videogame é lançada, trazendo gráficos ultra-realistas e experiências de jogo totalmente envolventes.">
+          <img src="assets/images/Image 08.png" alt="Pessoa jogando em console de última geração." loading="lazy">
           <p>Nova geração de consoles de videogame é lançada, trazendo gráficos ultra-realistas e experiências de jogo totalmente envolventes.</p>
         </figure>
         <figure>
           <span class="content-tag">Internet</span>
-          <img src="assets/images/Image 09.png" alt="Projeto busca oferecer internet de alta velocidade em áreas remotas através de satélites.">
+          <img src="assets/images/Image 09.png" alt="Satélites oferecendo internet em região remota." loading="lazy">
           <p>Projeto busca oferecer internet de alta velocidade em áreas remotas através de satélites.</p>
         </figure>
       </div>
@@ -120,7 +121,7 @@
             <p class="text-sm">Em um avanço surpreendente da inteligência artificial, uma empresa anuncia o desenvolvimento de um algoritmo capaz de prever eventos futuros com notável precisão. Descubra como essa tecnologia está desafiando as fronteiras da previsão e quais são as implicações para diversas áreas, desde finanças até planejamento estratégico.</p>
           </div>
           <div>
-            <img src="assets/images/Image 10.png" alt="Image">
+            <img src="assets/images/Image 10.png" alt="Tela exibindo previsões com gráficos de dados." loading="lazy">
           </div>
         </article>
 
@@ -131,7 +132,7 @@
             <p class="text-sm">Em um mundo cada vez mais conectado, a comunicação sem fronteiras é essencial. Nesse contexto, um dispositivo portátil surge como um verdadeiro herói linguístico, prometendo quebrar as barreiras idiomáticas instantaneamente. Imagine poder se comunicar fluentemente em qualquer lugar do mundo, independentemente do idioma local. Este dispositivo não é mais uma visão futurista, mas uma realidade impressionante que está transformando a forma como nos conectamos globalmente. Nesta reportagem, mergulharemos nas funcionalidades deste dispositivo revolucionário e como ele está moldando uma nova era de compreensão global.</p>
           </div>
           <div>
-            <img src="assets/images/Image 11.png" alt="Image">
+            <img src="assets/images/Image 11.png" alt="Pessoa utilizando dispositivo portátil de tradução." loading="lazy">
           </div>
         </article>
 
@@ -142,7 +143,7 @@
             <p class="text-sm">A tecnologia não só avança, mas também busca tornar a vida mais significativa para todas as gerações. No cenário atual, os robôs sociais, projetados especialmente para oferecer apoio e companhia aos idosos, estão ganhando destaque. Mais do que meros assistentes, esses robôs são programados para fornecer suporte emocional e físico, preenchendo lacunas nas necessidades de cuidado. Nesta matéria, exploraremos como esses companheiros tecnológicos estão impactando positivamente a qualidade de vida da terceira idade e proporcionando uma nova perspectiva sobre o envelhecimento.</p>
           </div>
           <div>
-            <img src="assets/images/Image 12.png" alt="Image">
+            <img src="assets/images/Image 12.png" alt="Idoso interagindo com robô de companhia." loading="lazy">
           </div>
         </article>
 
@@ -155,14 +156,14 @@
             </p>
           </div>
           <div>
-            <img src="assets/images/Image 13.png" alt="Image">
+            <img src="assets/images/Image 13.png" alt="Pessoa utilizando aplicativo de foco e produtividade em smartphone." loading="lazy">
           </div>
         </article>
       </div>
     </section>
     <aside>
       <div id="ads">
-        <img src="assets/Ads.png" alt="Ads">
+        <img src="assets/Ads.png" alt="Anúncio publicitário" loading="lazy">
       </div>
       <section id="more">
         <header class="grid grid-col">
@@ -176,7 +177,7 @@
         <div class="grid gap-2">
           <article class="grid grid-col gap-1">
             <div>
-              <img src="assets/images/Image 14.png" alt="Image">
+              <img src="assets/images/Image 14.png" alt="Aplicativo mostrando dados ambientais em tela." loading="lazy">
             </div>
             <div>
               <span class="content-tag">Software</span>
@@ -185,7 +186,7 @@
           </article>
           <article class="grid grid-col gap-1">
             <div>
-              <img src="assets/images/Image 15.png" alt="Image">
+              <img src="assets/images/Image 15.png" alt="Óculos de realidade virtual com controle háptico." loading="lazy">
             </div>
             <div>
               <span class="content-tag">Realidade Virtual</span>
@@ -194,7 +195,7 @@
           </article>
           <article class="grid grid-col gap-1">
             <div>
-              <img src="assets/images/Image 16.png" alt="Image">
+              <img src="assets/images/Image 16.png" alt="Pessoa utilizando criptomoedas em ambiente digital." loading="lazy">
             </div>
             <div>
               <span class="content-tag">Criptomoedas</span>
@@ -203,7 +204,7 @@
           </article>
           <article class="grid grid-col gap-1">
             <div>
-              <img src="assets/images/Image 17.png" alt="Image">
+              <img src="assets/images/Image 17.png" alt="Drone realizando entrega de encomenda." loading="lazy">
             </div>
             <div>
               <span class="content-tag">Drone</span>
@@ -212,7 +213,7 @@
           </article>
           <article class="grid grid-col gap-1">
             <div>
-              <img src="assets/images/Image 18.png" alt="Image">
+              <img src="assets/images/Image 18.png" alt="Modelo 3D de órgão humano impresso em laboratório." loading="lazy">
             </div>
             <div>
               <span class="content-tag">Impressão 3D</span>

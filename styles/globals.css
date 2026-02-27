@@ -18,8 +18,12 @@
   --h2: 800 1rem / 140% var(--font-family);
   --h3: 800 0.875rem / 140% var(--font-family);
   --text-span: 600 0.875rem / 145% var(--font-family);
-  --text-base: 400 1rem / 140% var(--font-family);
-  --text-sm: 400 0.875rem / 160% var(--font-family);
+  --text-base: 400 1rem / 150% var(--font-family);
+  --text-sm: 400 0.875rem / 165% var(--font-family);
+
+  /* Layout */
+  --container-max-width: 80rem;
+  --container-padding-inline: 2rem;
 }
 
 body {
@@ -54,11 +58,24 @@ h1,h2,h3 {
 
 img {
   max-width: 100%;
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .container {
-  max-width: 80rem;
-  padding-inline: 2rem;
+  max-width: var(--container-max-width);
+  padding-inline: var(--container-padding-inline);
   margin-inline: auto;
 }
 
@@ -72,4 +89,36 @@ img {
   letter-spacing: 0.04em;
   color: var(--text-color-primary);
   box-shadow: 0rem 0.25rem 1rem rgba(2,6,23,0.251);
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-block: 2rem;
+    row-gap: 3rem;
+    column-gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "featured"
+      "weekly"
+      "ai"
+      "aside";
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --container-padding-inline: 1.25rem;
+    /* Slightly larger, more readable text on small screens */
+    --h1: 800 1.4rem / 140% var(--font-family);
+    --h2: 800 1.125rem / 145% var(--font-family);
+    --h3: 800 1rem / 145% var(--font-family);
+    --text-span: 600 0.9375rem / 150% var(--font-family);
+    --text-base: 400 1.0625rem / 155% var(--font-family);
+    --text-sm: 400 0.9375rem / 170% var(--font-family);
+  }
+
+  main {
+    margin-block: 1.75rem;
+    row-gap: 2.5rem;
+  }
 }
